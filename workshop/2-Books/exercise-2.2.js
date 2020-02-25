@@ -13,5 +13,24 @@
 // Console.log(homeLibrary) to verify that all is working.
 
 class BookList {
-
+    constructor (books, current){
+        this.booksread =0;
+        this.boohUnread =0;
+        this.book = [];
+        this.lastBook = this.book[current-1] || 'none';
+        this.currentBook = this.book[current] || 'none';
+        this.upNext = this.book[current+1] || 'none';
+    }
 }
+let homeLibrary = new BookList();
+console.log(homeLibrary);
+
+
+// BookList {
+//     booksread: 0,
+//     boohUnread: 0,
+//     book: [],
+//     lastBook: 'none',
+//     currentBook: 'none',
+//     upNext: 'none'
+//   }
